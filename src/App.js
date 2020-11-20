@@ -18,7 +18,7 @@ function App() {
         <div className="App">
             <Layout>
                 <Header style={{padding: 150}}>
-                    <h1 style={{float: "left", color: "White"}} level={3}> Laconik </h1>
+                    <h1 style={{float: "left", color: "White"}} level={3}> I love you Drishti Maiya Nakarmi </h1>
                     <Avatar style={{float: "right"}} src='./Chrome_Logo.png'/>
                 </Header>
                 <Layout>
