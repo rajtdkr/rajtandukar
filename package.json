@@ -5,9 +5,9 @@
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
     "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.0",
+    "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
-    "antd": "^4.8.4",
+    "antd": "^4.8.5",
     "axios": "^0.21.0",
     "material-ui": "^0.20.2",
     "react": "^17.0.1",
@@ -44,9 +44,31 @@
       "last 1 safari version"
     ]
   },
+      "config": {
+        "nuxt": {
+            "host": "0.0.0.0",
+            "port": "3333"
+        }
+    },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-plugin-react": "^7.21.5",
-    "prettier": "2.2.0"
+    "babel-eslint": "^10.1.0",
+    "babel-preset-env": "^1.7.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-to-json": "^3.5.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
+    "jest-enzyme": "7.1.2",
+    "prettier": "^2.0.2",
+    "source-map-explorer": "^2.4.2"
   }
 }

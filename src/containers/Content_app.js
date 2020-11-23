@@ -11,6 +11,8 @@ function Content_app(){
        const onFinish = () => {
         setCount(count+1)
         setStatus('Success')
+
+
       };
 
     const onFinishFailed = errorInfo => {
@@ -20,6 +22,7 @@ function Content_app(){
 
 
     return(  <div >
+
 
               <Breadcrumb style={{margin: '16px 0'}}>
                                 <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
