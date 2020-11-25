@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
+    "@googlemaps/js-api-loader": "^1.11.1",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
@@ -12,6 +13,7 @@
     "material-ui": "^0.20.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-google-maps": "^9.4.5",
     "react-native": "^0.63.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
@@ -44,13 +46,15 @@
       "last 1 safari version"
     ]
   },
-      "config": {
-        "nuxt": {
-            "host": "0.0.0.0",
-            "port": "3333"
-        }
-    },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3333"
+    }
+  },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
     "babel-eslint": "^10.1.0",
     "babel-preset-env": "^1.7.0",
     "enzyme": "3.11.0",
@@ -68,7 +72,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^26.0.1",
     "jest-enzyme": "7.1.2",
-    "prettier": "^2.0.2",
+    "prettier": "^2.2.0",
     "source-map-explorer": "^2.4.2"
   }
 }

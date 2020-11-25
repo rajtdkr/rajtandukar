@@ -1,9 +1,10 @@
 import React from "react";
+import Home_Carousel from "./HomeCarousel";
 
 
 function Footer_app(){
     return(  <div >
-            Footer
+          <Home_Carousel/>
         </div>
         )
 }
