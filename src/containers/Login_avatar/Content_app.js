@@ -1,6 +1,6 @@
 import {Breadcrumb, Button, Checkbox, Form, Input} from "antd";
 import React, {useState} from "react";
-import Login_Successful_app from "./Login_Successful";
+import Login_Successful_app from "../Login_Successful";
 
 
 function Content_app(){

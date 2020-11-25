@@ -1,4 +1,5 @@
 import { Carousel} from 'antd';
+import { Button, notification } from 'antd';
 
 const contentStyle = {
   height: '160px',
@@ -9,8 +10,19 @@ const contentStyle = {
 };
 function Home_Carousel(){
 
-            return(
-          <Carousel effect="fade">
+
+    const openNotification = () => {
+  notification.open({
+    message: 'Notification Title',
+    description:
+      'Notifications working!.',
+    onClick: () => {
+      console.log('Notification Clicked!');
+    },
+  });
+};
+             return(
+          <Carousel autoplay effect="fade">
             <div>
               <h3 style={contentStyle}>User You
               </h3>
@@ -20,7 +32,12 @@ function Home_Carousel(){
               </h3>
             </div>
             <div>
-              <h3 style={contentStyle}>3</h3>
+              <h3 style={contentStyle}>
+              <Button type="primary" onClick={openNotification}>
+         Show Notification
+        </Button>
+
+              </h3>
             </div>
             <div>
               <h3 style={contentStyle}>4</h3>

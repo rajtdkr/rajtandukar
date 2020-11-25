@@ -1,16 +1,18 @@
 import React from "react";
 import { Layout } from "antd";
-import Header_app from "./Header_app";
-import Sider_app from "./Sider_app";
-import Content_app from "./Content_app";
-import Footer_app from "./Footer_app";
+import Header_app from "./Header/Header_app";
+import Sider_app from "./Sider/Sider_app";
+import Content_app from "./Login_avatar/Content_app";
+import Footer_app from "./Footer/Footer_app";
 import { Switch, Route } from "react-router-dom";
 import Login_Successful_app from "./Login_Successful";
-import Calender_app from "./Calender_app";
-import GoogleMaps_app from "./GoogleMaps_app";
+import Calender_app from "./Home/Calender_app";
+import GoogleMaps_app from "./Home/GoogleMaps_app";
+import Home_app from "./Home/Home_app";
 const { Footer, Sider, Content, Header } = Layout;
 
-function Login() {
+
+function Main_Router() {
   return (
     <div className="App">
       <Layout className={'full-height'}>
@@ -26,7 +28,7 @@ function Login() {
               }}
             >
               <Switch>
-                <Route exact path="/">Home</Route>
+                <Route exact path="/">Home <Home_app/></Route>
                 <Route path="/about">About <Calender_app/></Route>
                 <Route path = "/location">Location <GoogleMaps_app/></Route>
                 <Route path = "/loginSuccessul"><Login_Successful_app/></Route>
@@ -43,4 +45,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Main_Router;

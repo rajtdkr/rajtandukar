@@ -1,5 +1,5 @@
 import './App.css';
-import Login from './containers/Login';
+import Main_Router from './containers/Main_Router';
 import {BrowserRouter as Router} from "react-router-dom";
 import React from "react";
 
@@ -7,7 +7,7 @@ function App() {
     return (
       <Router>
 
-          <Login></Login>
+          <Main_Router></Main_Router>
       </Router>
     );
 }
