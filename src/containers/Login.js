@@ -14,36 +14,26 @@ function Login() {
   return (
     <div className="App">
       <Layout className={'full-height'}>
-        <Header>
-          <Header_app />
-        </Header>
-        <Layout>
-          <Sider>
-            <Sider_app />
-          </Sider>
+        <Header><Header_app /></Header>
+        <Layout><Sider><Sider_app /></Sider>
           <Layout>
             <Content
               className="site-layout-background"
               style={{
-                padding: 0,
-                height:'400px',
+                color: 'red',
+                padding: 50,
+                height:'400px'
               }}
             >
               <Switch>
-                <Route exact path="/">
-                  Home
-                </Route>
+                <Route exact path="/">Home</Route>
                 <Route path="/about">About <Calender_app/></Route>
                 <Route path = "/location">Location <GoogleMaps_app/></Route>
-
-                 <Route path = "/loginSuccessul"><Login_Successful_app/></Route>
-
-                <Route path="/dashboard">
-                  <Content_app />
-                </Route>
+                <Route path = "/loginSuccessul"><Login_Successful_app/></Route>
+                <Route path="/dashboard"><Content_app /></Route>
               </Switch>
             </Content>
-            <Footer style={{ padding: 50 }}>
+            <Footer style={{ padding: 0 }}>
               <Footer_app />
             </Footer>
           </Layout>

@@ -6,7 +6,6 @@ function Login_Successful_app(){
     const a = 0;
     return(
         <div>
-
             Hi, Your Login Was sucessful
         </div>
         )

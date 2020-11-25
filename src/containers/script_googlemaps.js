@@ -1,4 +1,3 @@
-
 (function (window,google) {
     //map options
     var options = { center : {

@@ -1,14 +1,9 @@
 import React from "react";
 import {Menu} from "antd";
-
-
 import {
-
   Link
 } from "react-router-dom";
-
 function Sider_app(){
-
     return(
         <Menu mode={"inline"}>
             <Menu.Item key="Home">
@@ -25,30 +20,4 @@ function Sider_app(){
         </Menu>
         )
 }
-//
-// function Home() {
-//   return (
-//     <div>
-//       <Login_Successful_app/>
-//     </div>
-//   );
-// }
-//
-// function About() {
-//   return (
-//     <div>
-//       <h2>About</h2>
-//     </div>
-//   );
-// }
-//
-// function Dashboard() {
-//   return (
-//     <div>
-//       <h2>Dashboard</h2>
-//     </div>
-//   );
-// }
-
-
 export default Sider_app;

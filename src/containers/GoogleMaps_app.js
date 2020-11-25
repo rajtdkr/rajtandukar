@@ -5,10 +5,10 @@ function GoogleMaps_app(){
 
     const createGoogleMap = () =>
         new window.google.maps.Map(googleMapRef.current, {
-            zoom: 14,
+            zoom: 20,
             center: {
-                lat: -34.397,
-                lng: 150.644,
+                lat: -31.9780,
+                lng:  115.8114,
             },
             disableDefaultUI: true,
 
