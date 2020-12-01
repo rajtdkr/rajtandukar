@@ -4,16 +4,17 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
-    "@progress/kendo-drawing": "^1.9.3",
     "@progress/kendo-react-pdf": "^4.1.0",
     "antd": "^4.8.6",
     "axios": "^0.21.0",
+    "particles-bg": "^2.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "redux": "^4.0.5",
-    "redux-form": "^8.3.7"
+    "redux-form": "^8.3.7",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
