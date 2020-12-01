@@ -17,6 +17,16 @@ function Sider_app(){
             <Menu.Item key="About">
             <Link to="/about" >About</Link>
             </Menu.Item>
+
+
+            <Menu.Item key="ColorChanger">
+            <Link to="/colorchanger" >ColorChanger</Link>
+            </Menu.Item>
+
+
+            <Menu.Item key="Resumeapp">
+            <Link to="/resume" >Resume</Link>
+            </Menu.Item>
         </Menu>
         )
 }

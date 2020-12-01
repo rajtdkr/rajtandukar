@@ -1,9 +1,7 @@
 import {Breadcrumb, Button, Checkbox, Form, Input} from "antd";
 import React, {useState} from "react";
-import Login_Successful_app from "../Login_Successful";
 
-
-function Content_app(){
+function Login_Form(){
 
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState();
@@ -11,7 +9,6 @@ function Content_app(){
        const onFinish = () => {
         setCount(count+1)
         setStatus('Success')
-         //  Login_Successful_app
       };
 
     const onFinishFailed = errorInfo => {
@@ -19,17 +16,12 @@ function Content_app(){
     setStatus('Failed')
     };
 
-
     return(  <div >
-
-
               <Breadcrumb style={{margin: '16px 0'}}>
                                 <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
                             </Breadcrumb>
                             <div style={{background: '#fff', padding: 24, minHeight: 580}}
-                                 className="site-layout-content">
-           <br/>
-
+                                    className="site-layout-content"><br/>
                                     <p>You submitted {count} times</p>
                                 <p>{status}</p>
                             <Form
@@ -41,7 +33,7 @@ function Content_app(){
                                   <Form.Item
                                     label="Username"
                                     name="username"
-                                    rules={[{ required: true, message: 'Please input your username!' }]}
+                                    rules={[{ required: true, message: 'Please input your username!'}]}
                                   >
                                     <Input />
                                   </Form.Item>
@@ -49,7 +41,7 @@ function Content_app(){
                                   <Form.Item
                                     label="Password"
                                     name="password"
-                                    rules={[{ required: true, message: 'Please input your password!' }]}
+                                    rules={[{ required: true, message: 'Please input your password!'}]}
                                   >
                                     <Input.Password />
                                   </Form.Item>
@@ -62,6 +54,7 @@ function Content_app(){
                                     <Button type="primary" htmlType="submit">
                                       Submit
                                     </Button>
+
                                   </Form.Item>
                                 </Form>
                             </div>
@@ -69,4 +62,4 @@ function Content_app(){
         )
 
 }
-export default Content_app;
+export default Login_Form;
