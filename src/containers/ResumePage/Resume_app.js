@@ -1,14 +1,22 @@
 import React from 'react';
+import {Image} from "antd";
+import Spiderman from "./Spiderman.jpg";
 
-import ParticlesBg from 'particles-bg'
 function Resume_app(){
+
+
         return(
 
     <div>
 
-Hi        <ParticlesBg type="circle" bg={true} />
+<Image
+                    width={1100}
+
+                    src={Spiderman}
+                />
             </div>
 
         )
     }
+
 export default Resume_app;

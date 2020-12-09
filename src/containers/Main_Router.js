@@ -24,9 +24,9 @@ function Main_Router() {
             <Content
               className="site-layout-background"
               style={{
-                color: 'red',
+                color: 'black',
                 padding: 50,
-                height:'400px'
+                height:'10%'
               }}
             >
               <Switch>
@@ -34,7 +34,7 @@ function Main_Router() {
                 <Route path="/about">About <Calender_app/></Route>
                 <Route path = "/location">Location <GoogleMaps_app/></Route>
                 <Route path = "/colorchanger">Color Changer <ColorChanger/></Route>
-                <Route path = "/resume">Resume <Resume_app/></Route>
+                <Route path = "/resume">SpiderMan <Resume_app/></Route>
                 <Route path = "/loginSuccessul"><ColorChanger/></Route>
                 <Route path="/dashboard"><Login_Form/></Route>
               </Switch>
