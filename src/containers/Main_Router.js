@@ -14,19 +14,35 @@ import Resume_app from "./ResumePage/Resume_app";
 const { Footer, Sider, Content, Header } = Layout;
 
 
-function Main_Router() {
+class Main_Router extends React.Component {
+
+  state = {
+    collapsed: false,
+  };
+
+  onCollapse = collapsed => {
+    console.log(collapsed);
+    this.setState({ collapsed });
+  };
+
+
+
+  render() {
+
+ const { collapsed } = this.state;
   return (
     <div className="App">
       <Layout className={'full-height'}>
         <Header><Header_app /></Header>
-        <Layout><Sider><Sider_app /></Sider>
+        <Layout>
+          <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}><Sider_app /></Sider>
           <Layout>
             <Content
               className="site-layout-background"
               style={{
                 color: 'black',
-                padding: 50,
-                height:'10%'
+                padding: 0,
+                height:'0%'
               }}
             >
               <Switch>
@@ -34,7 +50,7 @@ function Main_Router() {
                 <Route path="/about">About <Calender_app/></Route>
                 <Route path = "/location">Location <GoogleMaps_app/></Route>
                 <Route path = "/colorchanger">Color Changer <ColorChanger/></Route>
-                <Route path = "/resume">SpiderMan <Resume_app/></Route>
+                <Route path = "/resume">Resume <Resume_app/></Route>
                 <Route path = "/loginSuccessul"><ColorChanger/></Route>
                 <Route path="/dashboard"><Login_Form/></Route>
               </Switch>
@@ -46,7 +62,7 @@ function Main_Router() {
         </Layout>
       </Layout>
     </div>
-  );
+  );  }
 }
 
 export default Main_Router;
